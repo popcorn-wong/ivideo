@@ -7,9 +7,9 @@
 #### 使用方法
 
 1. 下载客户端 
-* [Mac](https://github.com/phobal/ivideo/releases/download/1.1.0/ivideo-1.1.0.dmg)
-* [Windows](https://github.com/phobal/ivideo/releases/download/1.1.0/ivideo.Setup.1.1.0.exe)
-* [Ubuntu](https://github.com/phobal/ivideo/releases/download/1.0.0/linux-unpacked.v1.0.0.zip)
+* [Mac](https://github.com/phobal/ivideo/releases/download/1.1.1/ivideo-1.1.1-mac.zip)
+* [Windows](https://github.com/phobal/ivideo/releases/download/1.1.1/ivideo-1.1.1-win.zip)
+* [Linux](https://github.com/phobal/ivideo/releases/download/1.0.0/linux-unpacked.v1.0.0.zip)
 
 2. 选择视频资源  
 
@@ -34,6 +34,31 @@
 * Electron
 * React
 * Redux
+
+### 如何启动
+
+> node version >= 7.6
+
+1. clone 项目到本地
+
+``` bash
+
+git clone https://github.com/phobal/ivideo.git
+
+```
+
+2. 进入项目 ` cd ivideo`
+3. 安装依赖 `yarn install`(如果没有的话，请全局安装yarn, `npm i yarn -g`)
+4. 打开开发环境 `yarn start`
+
+### 如何编译
+
+* 编译全平台 ` yarn package-all`
+* 编译当前平台 `yarn package`
+* windows: `yarn package-win`
+* Linux `yarn package-linux`
+
+编译出来的包都放在 `release` 目录下
 
 该项目是基于 [electron-react-boilerplate](https://github.com/chentsulin/electron-react-boilerplate) 脚手架 进行创建，感谢 @[chentsulin](https://github.com/chentsulin)
 
